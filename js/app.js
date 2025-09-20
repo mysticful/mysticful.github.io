@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
                     content.style.display = 'flex';
                     bgMusic.play();
                 }, 1000);
-            });
+            })});
