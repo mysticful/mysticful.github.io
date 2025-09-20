@@ -6,11 +6,10 @@
     <title>✦ • myst !! • ✦</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/pfp.jpg">
-    <script src="js/app.js"></script>
 </head>
 <body>
     <div id="overlay">
-        <div id="enter-text">click to enter</div>
+        <div class="enter-button">click to enter</div>
     </div>
     <br>
     <div class="box">
@@ -21,20 +20,6 @@
 </div>
    <audio id="bg-music" src="audio/FUKOUNA GIRL 4.mp3" loop></audio>
 <script src="./js/oneko.js"></script>
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const overlay = document.getElementById('overlay');
-            const content = document.querySelector('.html');
-            const bgMusic = document.getElementById('bg-music');
-            
-            overlay.addEventListener('click', () => {
-                overlay.style.opacity = '0';
-                setTimeout(() => {
-                    overlay.style.display = 'none';
-                    content.style.display = 'flex';
-                    bgMusic.play();
-                }, 1000);
-            });
-          </script>
+ <script src="./js/app.js"></script>
 </body>
 </html>
