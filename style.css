@@ -60,3 +60,11 @@ span#socials {
   color: grey;
   align-items: left;
 }
+
+#player {
+      margin-top: 40px;
+      border: 2px dashed #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
