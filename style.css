@@ -1,7 +1,10 @@
 html {
     background-color: #000000;
     color: white;
-    font-family: monospace;
+    font-family: system-ui;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 h1 {
@@ -13,6 +16,7 @@ h1 {
  width: 150px;
   height: 150px;
   border: 2px solid white;
+  align-items: center;
 }
 
 
@@ -39,18 +43,6 @@ color: white;
   border: #fff 2px solid;
 }
 
-.pronouns {
-  color: #a6adc8;
- display: inline-block;
-  font-size: 15px
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-align: center;
-}
 
 #about {
   color: #a6adc8;
