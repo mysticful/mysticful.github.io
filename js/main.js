@@ -1,7 +1,9 @@
+// took this from frogiee.one
+
 const textElement = document.getElementById("text");
 const overlay = document.getElementById("overlay");
 const audio = document.getElementById("enter-sound");
-let titleText = "frogiee.one";
+let titleText = "myst.lat";
 let opacity = 0;
 let fadeIn = true;
 let delay = 0.007;
@@ -62,10 +64,7 @@ const phrases = [
     "he can't make a hit for the life",
     "he can't make a hit for the life of",
     "he can't make a hit for the life of him!",
-    "umm",
-    "umm well",
-    "umm well you shouldnt",
-    "umm well you shouldnt say that",
+    "...",
     "YEEEOUCH!",
     
 ];
