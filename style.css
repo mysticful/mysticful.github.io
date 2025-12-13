@@ -127,7 +127,7 @@ display: none;
     transition: all 0.3s ease;
   }
 
-  .random-img {
+  #random-img {
       position: fixed;
       bottom: 0;
       left: 0;
