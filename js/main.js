@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 overlay.style.opacity = '0';
                 setTimeout(() => {
                     overlay.style.display = 'none';
-                    content.style.display = 'flex';
                     bgMusic.play();
                 }, 1000);
             })});
