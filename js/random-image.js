@@ -1,10 +1,12 @@
     // YES this is skidded from brunys.org so what
     
     const images = [
-      "/img/naegiri.png",
+      "/img/celeste.png",
       "/img/eternalsugar.png",
       "/img/ame.png",
-      "/img/coinpin.png"
+      "/img/chihiro.png",
+      "/img/wither.png",
+      "/img/pvc.png"
     ];
 
     const img = document.getElementById("random-img");

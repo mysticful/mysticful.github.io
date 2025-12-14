@@ -66,6 +66,7 @@ span#socials {
   justify-content: center;
   z-index: 10;
   color: white;
+  opacity: 0;
   font-size: 1.5vw;
   cursor: pointer;
   transition: opacity 1s ease;
