@@ -8,11 +8,12 @@ html {
 }
 
 h1 {
-  font-size: 40px
+  font-size: 40px;
+  font-family: monospace;
 }
 
 .pfp {
-  border-radius: 20%;
+  border-radius: 50%;
  width: 150px;
   height: 150px;
   border: 2px solid white;
