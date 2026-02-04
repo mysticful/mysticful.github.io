@@ -4,6 +4,8 @@
     <title><3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/pfp.png">
+    <script src="js/three.js"></script>
+    <script src="js/vanga.js"></script>
 </head>
 <body>
     <br>
@@ -35,6 +37,22 @@
 <a id="bttn" href="mailto:hi@myst.lat">email <span id="socials">hi@myst.lat</span></a><a id="bttn" href="https://tiktok.com/@mystisfckedup">tiktok <span id="socials">@mystisfckedup</span></a><a id="bttn" href="https://youtube.com/@mysful">youtube <span id="socials">@mysful</span></a>
 </div>
 <img src="" class="random-images" id="random-img">
+<div id="vanta" style="position: relative;"><span style="position: relative; z-index: 1;"> </span><canvas class="vanta-canvas" style="display: block; position: absolute; z-index: 0; top: 0px; left: 0px; width: 522px; height: 763px;" width="348" height="508"></canvas></div>
+<script>
+VANTA.CELLS({
+  el: "#vanta",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  color1: 0x4d4d4d,
+  color2: 0x0,
+  size: 5.00,
+  speed: 3.20
+})
+</script>
 <audio id="bg-music" src="/audio/Alex G - Break 0.mp3" loop></audio>
 <script src="/js/main.js"></script>
 <script src="/js/random-image.js"></script>
