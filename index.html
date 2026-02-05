@@ -11,7 +11,10 @@ const titles = [
   "do not refresh",
   "you weren’t supposed to see this",
   "lmfao",
-  "im sorry, im geeked on a fcking monday"
+  "i gently open the door",
+  "myst.lat",
+  "what do u think of life",
+  "tapping out, in my head i see bright lights.."
 ];
 
 document.title = titles[Math.floor(Math.random() * titles.length)];
@@ -34,10 +37,30 @@ document.title = titles[Math.floor(Math.random() * titles.length)];
     
     <div class="header">
     <img class="pfp" src="img/kyoko.jpg">
-    <h1>myst.</h1>
+    <h1 id="typewriter">myst.</h1>
     </div>
 
+<script>
+        const text = "myst.";
+        const typingDelay = 700; 
+        const initialDelay = 0; 
+        const h1 = document.querySelector(".typewriter");
 
+        function type() {
+        setTimeout(() => {
+            for (let i = 0; i < text.length; i++) {
+            setTimeout(() => {
+                h1.textContent += text[i];
+                if (i === text.length - 1) {
+                cursor.style.display = "none"; 
+                }
+            }, i * typingDelay);
+            }
+        }, initialDelay);
+        }
+
+        type();
+      </script>
 
 <h2>about</h2>
 <div id="about">
@@ -51,7 +74,7 @@ document.title = titles[Math.floor(Math.random() * titles.length)];
 <br>
 <h2>socials</h2>
 <a id="bttn" href="mailto:hi@myst.lat">email <span id="socials">hi@myst.lat</span></a><a id="bttn" href="https://tiktok.com/@mystisfckedup">tiktok <span id="socials">@mystisfckedup</span></a><a id="bttn" href="https://youtube.com/@mysful">youtube <span id="socials">@mysful</span></a>
-<img src="/img/pvc.png" class="random-images" id="random-img">
+<img src="" class="random-images" id="random-img">
 </div>
     </div>
 <script>
