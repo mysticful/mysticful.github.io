@@ -1,19 +1,40 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><3</title>
+    <title></title>
+    <script>
+    const titles = [
+  "myst.",
+  "nothing is real",
+  "<3",
+  "im still thinking about you",
+  "wither.lat",
+  "..."
+];
+
+let saved = sessionStorage.getItem("title");
+
+if (!saved) {
+  saved = titles[Math.floor(Math.random() * titles.length)];
+  sessionStorage.setItem("title", saved);
+}
+
+document.title = saved;
+
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/pfp.png">
     <script src="js/three.js"></script>
     <script src="js/vanta.js"></script>
 </head>
 <body>
+    <div id="vanta"></div>
     <br>
        <div id="overlay">
         <div id="enter-text">click to enter</div>
     </div>
-
-    <div class="box">
+    <div id="content">
+    <div class="box" style="display: block;">
     <br>
     
     <div class="header">
@@ -35,9 +56,9 @@
 <br>
 <h2>socials</h2>
 <a id="bttn" href="mailto:hi@myst.lat">email <span id="socials">hi@myst.lat</span></a><a id="bttn" href="https://tiktok.com/@mystisfckedup">tiktok <span id="socials">@mystisfckedup</span></a><a id="bttn" href="https://youtube.com/@mysful">youtube <span id="socials">@mysful</span></a>
+<img src="/img/pvc.png" class="random-images" id="random-img">
 </div>
-<img src="" class="random-images" id="random-img">
-<div id="vanta" style="position: relative;"><span style="position: relative; z-index: 1;"> </span><canvas class="vanta-canvas" style="display: block; position: absolute; z-index: 0; top: 0px; left: 0px; width: 522px; height: 763px;" width="348" height="508"></canvas></div>
+    </div>
 <script>
 VANTA.CELLS({
   el: "#vanta",
@@ -53,11 +74,12 @@ VANTA.CELLS({
   speed: 3.20
 })
 </script>
-<audio id="bg-music" src="/audio/Alex G - Break 0.mp3" loop></audio>
+<audio id="bg-music" src="/audio/Alex G - Break 0.mp3" loop=""></audio>
 <script src="/js/main.js"></script>
 <script src="/js/random-image.js"></script>
-<script src="/js/something<3.js"></script>
+<script src="/js/something&lt;3.js"></script>
 <script src="/js/mylove.js"></script>
 <script src="/js/therealityiexpected.ts"></script>
-</body>
-</html>
+
+
+</body></html>
