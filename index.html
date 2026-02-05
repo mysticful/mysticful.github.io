@@ -3,23 +3,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <script>
-    const titles = [
+const titles = [
   "myst.",
+  "i still think about you",
   "nothing is real",
   "<3",
-  "im still thinking about you",
-  "wither.lat",
-  "..."
+  "do not refresh",
+  "you weren’t supposed to see this",
+  "lmfao",
+  "im sorry, im geeked on a fcking monday"
 ];
 
-let saved = sessionStorage.getItem("title");
-
-if (!saved) {
-  saved = titles[Math.floor(Math.random() * titles.length)];
-  sessionStorage.setItem("title", saved);
-}
-
-document.title = saved;
+document.title = titles[Math.floor(Math.random() * titles.length)];
 
     </script>
     <link rel="stylesheet" href="style.css">
