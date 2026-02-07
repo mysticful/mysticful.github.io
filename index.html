@@ -14,7 +14,12 @@ const titles = [
   "i gently open the door",
   "myst.lat",
   "what do u think of life",
-  "tapping out, in my head i see bright lights.."
+  "tapping out, in my head i see bright lights..",
+  "life as a junkie really sucks",
+  "use wither!",
+  "^-^",
+  "its the monokuma file!",
+  "d2h5IHdvdWxkIHlvdSB0YWtlIHRoZSB0aW1lIG91dCBvZiB5b3VyIGRheSBqdXN0IHRvIGRlY29kZSB0aGlzIGxtZmFvLiBkbyB5b3UgbGlrZSBtZSBvciBzb21ldGhpbmc/PyBkaWQgeW91IGV4cGVjdCB0byBmaW5kIGEgc2VjcmV0IGhlcmU/IGxtZmFvIG5vLiBidXQgYXJvdW5kIHRoZSBzaXRlcyBjb2RlLCB5b3VsbCBmaW5kIGEgc2VjcmV0LiBpdHMgbm90IHRvbyBoYXJkIHRvIGZpbmQu"
 ];
 
 document.title = titles[Math.floor(Math.random() * titles.length)];
@@ -36,27 +41,28 @@ document.title = titles[Math.floor(Math.random() * titles.length)];
     <br>
     
     <div class="header">
-    <img class="pfp" src="img/kyoko.jpg">
+    <img class="pfp" src="img/makotot.jpg">
     <h1 id="typewriter"></h1>
     </div>
 
 <script>
         const text = "myst.";
-        const typingDelay = 700; 
-        const initialDelay = 0; 
+        const typingDelay = 500; 
+        const initialDelay = 100; 
+        const cursor = document.getElementById("cursor");
         const h1 = document.querySelector(".typewriter");
 
         function type() {
-        setTimeout(() => {
-            for (let i = 0; i < text.length; i++) {
             setTimeout(() => {
-                h1.textContent += text[i];
-                if (i === text.length - 1) {
-                cursor.style.display = "none"; 
+                for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    h1.textContent += text[i];
+                    if (i === text.length - 1) {
+                    cursor.style.display = "none"; 
+                    }
+                }, i * typingDelay);
                 }
-            }, i * typingDelay);
-            }
-        }, initialDelay);
+            }, initialDelay);
         }
 
         type();
@@ -92,7 +98,7 @@ VANTA.CELLS({
   speed: 3.20
 })
 </script>
-<audio id="bg-music" src="/audio/Alex G - Break 0.mp3" loop=""></audio>
+<audio id="bg-music" src="/audio/junkie 0.mp3" loop=""></audio>
 <script src="/js/main.js"></script>
 <script src="/js/random-image.js"></script>
 <script src="/js/something&lt;3.js"></script>
