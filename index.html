@@ -5,6 +5,7 @@
     <script>
 const titles = [
   "myst.",
+  "fun fact: everytime you refresh the page the title changes",
   "i still think about you",
   "nothing is real",
   "<3",
@@ -42,31 +43,8 @@ document.title = titles[Math.floor(Math.random() * titles.length)];
     
     <div class="header">
     <img class="pfp" src="img/makotot.jpg">
-    <h1 id="typewriter"></h1>
+    <h1>mysticful</h1>
     </div>
-
-<script>
-        const text = "myst.";
-        const typingDelay = 500; 
-        const initialDelay = 100; 
-        const cursor = document.getElementById("cursor");
-        const h1 = document.querySelector(".typewriter");
-
-        function type() {
-            setTimeout(() => {
-                for (let i = 0; i < text.length; i++) {
-                setTimeout(() => {
-                    h1.textContent += text[i];
-                    if (i === text.length - 1) {
-                    cursor.style.display = "none"; 
-                    }
-                }, i * typingDelay);
-                }
-            }, initialDelay);
-        }
-
-        type();
-      </script>
 
 <h2>about</h2>
 <div id="about">
