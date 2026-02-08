@@ -172,3 +172,9 @@ h1 {
   font-size: 40px;
   text-shadow: 0 0 8px white;
 }
+
+#animationText span {
+    opacity: 0;
+    display: inline-block;
+    margin: 0 2px;
+}
