@@ -101,7 +101,7 @@ color: white;
   }
 
 .box {
-opacity: 0;
+opacity: 1;
   transition: opacity 1.6s ease;
   flex-direction: column;
   align-items: center;
