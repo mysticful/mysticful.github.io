@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.getElementById('overlay');
   const clickEnter = document.getElementById('enter-text');
   const animationText = document.getElementById('animationText');
-  const siteContent = document.getElementById('content-wrapper');
+  const siteContent = document.getElementById('content');
   const audio = document.getElementById('bg-music');
 
   clickEnter.addEventListener('click', () => {
