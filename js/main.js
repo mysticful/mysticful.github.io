@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       overlay.style.opacity = 0;
       siteContent.style.opacity = 1;
-      siteContent.style.display = 'block';
 
       setTimeout(() => {
         overlay.style.display = 'none';
