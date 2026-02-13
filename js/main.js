@@ -24,8 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   { text: 'drop', time: 0 },
   { text: 'drop', time: 350 },
   { text: 'drop', time: 700 },
-  { text: 'drop', time: 1050 },
-  { text: 'it!',   time: 1450 },
+  { text: 'drop it!', time: 1050 }
 ];
 
     animationText.innerHTML = '';
