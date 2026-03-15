@@ -21,11 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 60);
 
     const words = [
-  { text: 'drop', time: 0 },
-  { text: 'drop', time: 350 },
-  { text: 'drop', time: 700 },
-  { text: 'drop it!', time: 1050 }
-];
+      { text: 'PULL', time: 0 },
+      { text: 'THEM', time: 300 },
+      { text: 'TO', time: 600 },
+      { text: 'THEIR', time: 900 },
+      { text: 'GRAVE!', time: 1200 }
+    ];
 
     animationText.innerHTML = '';
 
@@ -60,6 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
-
 
 // read something<3.js
