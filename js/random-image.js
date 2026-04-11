@@ -8,7 +8,7 @@
       "/img/pvc.png",
       "/img/esc.png",
       "/img/kyoko.jpg",
-      "/img/ramona.jpg"
+      "/img/ramona.jpeg"
     ];
 
     const img = document.getElementById("random-img");

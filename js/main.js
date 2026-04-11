@@ -1,65 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('overlay');
+            const content = document.querySelector('.box');
+            const bgMusic = document.getElementById('bg-music');
 
-  const overlay = document.getElementById('overlay');
-  const clickEnter = document.getElementById('enter-button');
-  const animationText = document.getElementById('animationText');
-  const siteContent = document.getElementById('content');
-  const audio = document.getElementById('bg-music');
-
-  clickEnter.addEventListener('click', () => {
-
-    clickEnter.style.display = 'none';
-
-    audio.volume = 0;
-    audio.play();
-
-    let vol = 0;
-    const fade = setInterval(() => {
-      vol += 0.03;
-      audio.volume = Math.min(vol, 1);
-      if (vol >= 1) clearInterval(fade);
-    }, 60);
-
-    const words = [
-      { text: 'PULL', time: 0 },
-      { text: 'THEM', time: 300 },
-      { text: 'TO', time: 600 },
-      { text: 'THEIR', time: 900 },
-      { text: 'GRAVE!', time: 1200 }
-    ];
-
-    animationText.innerHTML = '';
-
-    words.forEach((wordObj) => {
-      const spanWord = document.createElement('span');
-      spanWord.style.display = 'inline-block';
-      spanWord.style.margin = '0 3px';
-      spanWord.style.opacity = 0;
-      spanWord.style.transition = 'opacity 0.5s ease';
-
-      spanWord.textContent = wordObj.text;
-      animationText.appendChild(spanWord);
-      animationText.appendChild(document.createTextNode(' '));
-
-      setTimeout(() => {
-        spanWord.style.opacity = 1;
-      }, wordObj.time);
-    });
-
-    const totalDuration = words[words.length - 1].time + 600;
-
-    setTimeout(() => {
-      overlay.style.opacity = 0;
-      siteContent.style.opacity = 1;
-
-      setTimeout(() => {
-        overlay.style.display = 'none';
-      }, 800);
-
-    }, totalDuration);
-
-  });
-
-});
-
-// read something<3.js
+            overlay.addEventListener('click', () => {
+                overlay.style.opacity = '0';
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                    content.style.display = 'flex';
+                    bgMusic.play();
+                }, 1000);
+            })});
