@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
       { text: 'PULL', time: 0 },
       { text: 'THEM', time: 300 },
       { text: 'TO', time: 600 },
-      { text: 'THEIR GRAVE!', time: 900 },
+      { text: 'THEIR', time: 900 },
+      { text: 'GRAVE!', time: 1200 }
     ];
 
     animationText.innerHTML = '';
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, wordObj.time);
     });
 
-    const totalDuration = words[words.length - 1].time + 800;
+    const totalDuration = words[words.length - 1].time + 600;
 
     setTimeout(() => {
       overlay.style.opacity = 0;

@@ -6,7 +6,9 @@
       "/img/chihiro.png",
       "/img/wither.png",
       "/img/pvc.png",
-      "/img/esc.png"
+      "/img/esc.png",
+      "/img/kyoko.jpg",
+      "/img/ramona.jpg"
     ];
 
     const img = document.getElementById("random-img");
