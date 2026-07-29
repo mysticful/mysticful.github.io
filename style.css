@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FOT-HummingStd-D';
-  src: url('img/FOT-HummingStd-D.otf') format('otf');
+  src: url('img/FOT-HummingStd-D.otf') format('opentype');
 }
 
 html, body {
@@ -58,7 +58,7 @@ color: white;
 
 span#socials {
   font-size: 13px;
-  color: rgb(67, 13, 60);
+  color: rgb(255,255,255);
   align-items: left;
 }
 
